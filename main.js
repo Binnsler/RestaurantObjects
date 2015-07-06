@@ -38,7 +38,7 @@ Drink.prototype.toString = function(){
 
 	var ingredientString = this.ingredients.join(', ')
 
-	var string = 'Food Name: ' + this.name + '\n' + 'Description: ' + this.description + '\n' + 'Price: $' + this.price + '\n' + 'Ingredients: ' + ingredientString + '\n';
+	var string = 'Food Name: ' + this.name + 'Description: ' + this.description + 'Price: $' + this.price + 'Ingredients: ' + ingredientString;
 
 	return string;
 }
@@ -58,7 +58,7 @@ Plate.prototype.toString = function(){
 
 	var ingredientString = this.ingredients.join(', ')
 
-	var string = 'Food Name: ' + this.name + '\n' + 'Description: ' + this.description + '\n' + 'Price: $' + this.price + '\n' + 'Ingredients: ' + ingredientString +'\n'
+	var string = 'Food Name: ' + this.name + 'Description: ' + this.description + 'Price: $' + this.price + 'Ingredients: ' + ingredientString;
 
 	return string;
 }
@@ -162,7 +162,7 @@ Restaurant.prototype.toString = function(){
 
 	var menuString = this.menu.plates.join(', ')
 
-	var string = 'Restaurant Name: ' + this.name + '\n' + 'Description: ' + this.description + '\n' + 'Menu: \n' + menuString;
+	var string = 'Restaurant Name: ' + this.name + 'Description: ' + this.description + 'Menu: ' + menuString;
 
 	return string;
 }
